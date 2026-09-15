@@ -1,0 +1,6 @@
+{
+  "name": "Armdecor Furniture",
+  "description": "Luxury furniture showroom based in Los Angeles, California offering timeless elegance, handcrafted comfort, and bespoke interior design.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

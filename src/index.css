@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-ivory: #F5F1E8;
+    --color-soft-beige: #E8DFCE;
+    --color-antique-gold: #C88916;
+    --color-espresso: #2B2118;
+    --color-charcoal: #1F1F1F;
+    --color-warm-gray: #6F685D;
+  }
+
+  html {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #1F1F1F;
+    background-color: #F5F1E8;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  body {
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+}
+
+/* Custom Utilities for Luxury Furniture Aesthetic */
+.font-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-sans {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Antique gold subtle gradient and border accents */
+.border-gold-subtle {
+  border-color: rgba(200, 137, 22, 0.25);
+}
+
+.bg-antique-gold {
+  background-color: #C88916;
+}
+
+.text-antique-gold {
+  color: #C88916;
+}
+
+.border-antique-gold {
+  border-color: #C88916;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F1E8;
+}
+.dark ::-webkit-scrollbar-track {
+  background: #1B1510;
+}
+::-webkit-scrollbar-thumb {
+  background: #C88916;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A66F0F;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-delay: 0s !important;
+    transition-duration: 0s !important;
+  }
+}
